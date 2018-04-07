@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "node server.js",
+    "heroku-postbuild": "next build"
+    
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +19,7 @@
     "mocha": "^5.0.5",
     "next": "^4.1.4",
     "next-routes": "^1.4.1",
+    "now": "^11.0.6",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "semantic-ui-css": "^2.3.1",

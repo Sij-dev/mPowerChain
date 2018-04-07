@@ -1,0 +1,24 @@
+/* next.config.js
+
+http://surge.sh/help/getting-started-with-surge
+$ npm install -g surge
+
+Add to package.json
+"export": "next build && next export",
+
+https://github.com/zeit/next.js
+make this next.config.js
+
+npm run export
+cd out
+surge
+*/
+
+
+module.exports = {
+    exportPathMap: function() {
+        return {
+            '/':{pages: '/'}
+        }
+    }
+}
